@@ -9,7 +9,7 @@ function App() {
   const [blinkTrigger, setBlinkTrigger] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App w-3/4 mx-auto py-8">
 
       <DrumMachine />
     </div>

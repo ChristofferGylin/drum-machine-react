@@ -34,12 +34,12 @@ const DrumPad = (props) => {
     }
 
     return (
-        <div className="App">
-            <div>
-                <h2>{title}</h2>
-                <button onClick={handleClick} className={`h-12 w-12 border border-slate-600 rounded transition duration-[50ms] ${color}`}>Hit</button>
-            </div>
+
+        <div className='w-full flex flex-col gap-4'>
+            <div className='hidden sm:flex items-center w-full bg-teal-700 rounded-full overflow-hidden'><h2 className='w-full h-full text-center text-teal-300'>{title}</h2></div>
+            <button onClick={handleClick} className={`w-full aspect-square rounded border border-slate-600 rounded transition duration-[50ms] ${color}`}></button>
         </div>
+
     )
 
 }
