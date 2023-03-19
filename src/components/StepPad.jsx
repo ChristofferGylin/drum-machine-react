@@ -1,4 +1,4 @@
-const StepPad = ({ active }) => {
+const StepPad = ({ active, handleClick }) => {
 
     let color;
 
@@ -15,7 +15,7 @@ const StepPad = ({ active }) => {
 
     return (
 
-        <button className={`w-1/12 aspect-square rounded ${color}`}></button>
+        <button onMouseDown={handleClick} className={`w-1/12 aspect-square rounded ${color}`}></button>
 
     )
 

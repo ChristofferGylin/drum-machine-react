@@ -174,7 +174,18 @@ const DrumMachine = () => {
                 <div className="flex gap-2">
                     {steps.map((step, index) => {
 
-                        return <StepPad key={`stepPad${index}`} active={step} />
+                        const handleClick = () => {
+
+                            if (patternMode) {
+
+                                engine.current.channels[currentPad].pattern[index] = !engine.current.channels[currentPad].pattern[index];
+                                setSteps([...engine.current.channels[currentPad].pattern]);
+
+                            }
+
+                        }
+
+                        return <StepPad key={`stepPad${index}`} handleClick={handleClick} active={step} />
 
                     })}
                 </div>

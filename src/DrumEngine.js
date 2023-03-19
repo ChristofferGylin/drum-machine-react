@@ -60,10 +60,10 @@ export default class DrumEngine {
                         player: new Player(),
                         volume: new Volume(),
                         pattern: [
-                            true, false, false, false,
-                            true, false, false, false,
-                            true, false, false, false,
-                            true, false, false, false,
+                            false, false, false, false,
+                            false, false, false, false,
+                            false, false, false, false,
+                            false, false, false, false,
                         ]
 
                     }
